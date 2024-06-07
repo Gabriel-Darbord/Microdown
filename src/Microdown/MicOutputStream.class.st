@@ -22,7 +22,7 @@ MicOutputStream class >> on: aStream [
 { #category : 'streaming' }
 MicOutputStream >> << anObject [
 	anObject isBlock
-		ifTrue: [ anObject ]
+		ifTrue: [ anObject value ]
 		ifFalse: [ stream << anObject ]
 ]
 
